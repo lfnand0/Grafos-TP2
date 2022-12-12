@@ -190,14 +190,6 @@ def gerarGrafoCiclico(n):
 def gerarGrafoCompleto(n):
     return grafoAleatorio(n, 1)
 
-# NÚMERO DE VÉRTICES
-v = 10
-
-n = len(sys.argv)
-if (n > 0):
-    v = sys.argv[0]
-    # if (n > 1):
-
 # Parsing dos argumentos inline
 # UTILIZAÇÃO
 
@@ -244,6 +236,7 @@ parser.add_argument("-ciclo", action='store', nargs='*')
 parser.add_argument("-completo", action='store', nargs='*')
 args = parser.parse_args()
 
+# VARIÁVEIS PADRÃO
 v = 10
 p = 0.3
 grafo = []
